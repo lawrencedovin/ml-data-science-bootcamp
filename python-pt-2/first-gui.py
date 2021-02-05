@@ -9,8 +9,5 @@ picture = [
 
 for row in picture:
     for pixel in row:
-        if pixel == 1:
-            print('*', end='')
-        else:
-            print(' ', end='')
+        print('*', end='') if pixel else print(' ', end='')
     print('')
